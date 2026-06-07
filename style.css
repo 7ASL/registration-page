@@ -9,6 +9,7 @@
 
 *, *::before, *::after{
     box-sizing: border-box;
+    font-family: Inter;
 }
 
 body {
@@ -24,13 +25,16 @@ body {
 /* Panorama */
 
 #image {
+    height: 100vh;
+    flex-basis: 35%;
     line-height: 0;
     position: relative;
 }
 
 #image #panorama {
     height: 100vh;
-    width: auto;
+    width: 35vw;
+    object-fit: cover;
 }
 
 /* Logo */
@@ -50,13 +54,37 @@ body {
     height: 80%;
 }
 
-#image span {
+/* Photo Credit */
+#image #credit {
     position: absolute;
     top: 95vh;
-    left: 25%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
 #image span,
 #image span a {
     color: white;
+    font-size: 0.8rem;
+}
+
+/* Content Container - Right Side */
+#content-container {
+    background-color: #F8F8F8;
+    color: #111111;
+    flex-basis: 65%;
+}
+
+#text {
+    width: auto;
+    padding: 2.5em;
+}
+
+#text span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
