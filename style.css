@@ -6,3 +6,57 @@
     font-style: normal;
     font-display: swap;
 }
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Panorama */
+
+#image {
+    line-height: 0;
+    position: relative;
+}
+
+#image #panorama {
+    height: 100vh;
+    width: auto;
+}
+
+/* Logo */
+#logo {
+    position: absolute; 
+    top: 35vh;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 50%);
+    /* Center Image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    height: 80%;
+}
+
+#image span {
+    position: absolute;
+    top: 95vh;
+    left: 25%;
+}
+
+#image span,
+#image span a {
+    color: white;
+}
