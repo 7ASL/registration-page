@@ -132,6 +132,22 @@ input:focus {
     border-color: var(--text-main);
 }
 
+input:not(:focus):user-invalid {
+    border-color: #EF4444;
+    border-width: 2px;
+}
+
+#form-container div span#error {
+    display: none;
+    font-size: 0.8rem;
+    color: #DC2626;
+    margin: 0.2em;
+}
+
+#form-container div span#error.active {
+    display: block;
+}
+
 /* Button */
 button {
     width: 15em;
@@ -146,6 +162,10 @@ button {
     font-weight: 500;
     font-size: 1rem;
     text-shadow: 1px 1px 5px var(--text-main);
+}
+
+button:hover {
+    background-color: #0EA271;
 }
 
 #login {
