@@ -42,7 +42,7 @@ body {
     justify-content: center;
 }
 
-#image #panorama {
+#image #svg {
     height: 100vh;
     width: 30vw;
     object-fit: cover;
@@ -137,14 +137,14 @@ input:not(:focus):user-invalid {
     border-width: 2px;
 }
 
-#form-container div span#error {
+#form-container div span.error {
     display: none;
     font-size: 0.8rem;
     color: #DC2626;
     margin: 0.2em;
 }
 
-#form-container div span#error.active {
+#form-container div span.error.active {
     display: block;
 }
 

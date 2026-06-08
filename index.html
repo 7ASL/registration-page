@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Sign-up form</title>
-    <link rel="stylesheet" type="text/css" href="animation.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="validation.js" defer></script>
 </head>
 <body>
     <div id="flex-container">
         <div id="image">
-            <object type="image/svg+xml" data="img/mobile-encryption.svg" class="animated" id="panorama"></object>
+            <object type="image/svg+xml" data="img/mobile-encryption.svg" id="svg"></object>
             <div id="credit">
                 <span>Image from <a href="https://magnific.com/"><strong>Magnific</strong></a></span>
             </div>
@@ -28,34 +27,33 @@
                     <div>
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name" name="user-first" minlength="2" required/>
-                        <span id="error">Minimum 2 signs required.</span>
+                        <span class="error">Minimum 2 signs required.</span>
                     </div>
                     <div>
                         <label for="last-name">LAST NAME</label>
                         <input type="text" id="last-name" name="user-last" minlength="2" required/>
-                        <span id="error">Minimum 2 signs required.</span>
-
+                        <span class="error">Minimum 2 signs required.</span>
                     </div>
                     <div>
                         <label for="email">EMAIL</label>
-                        <input type="email" id="emial" name="user-email" required/>
-                        <span id="error">Email is not correct.</span>
+                        <input type="email" id="email" name="user-email" required/>
+                        <span class="error">Email is not correct.</span>
                     </div>
                     <div>
                         <label for="phone">PHONE NUMBER</label>
                         <input type="tel" id="phone" name="user-phone" placeholder="500100100" required/>
-                        <span id="error">Phone numer is required.</span>
+                        <span class="error">Phone numer is required.</span>
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
                         <input type="password" id="password" name="user-password" minlength="8" required/>
-                        <span id="error">Minimum 8 signs required.</span>
+                        <span class="error">Minimum 8 signs required.</span>
 
                     </div>
                     <div>
                         <label for="password-repeat">CONFIRM PASSWORD</label>
                         <input type="password" id="password-repeat" name="user-password-repeat" minlength="8" required>
-                        <span id="error">Minimum 8 signs required.</span>
+                        <span class="error">Minimum 8 signs required.</span>
 
                     </div>
                 </form>
