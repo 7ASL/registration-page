@@ -66,9 +66,13 @@ body {
     font-size: 0.8rem;
 }
 
+strong {
+    color: var(--primary-color)
+}
+
 /* Content Container - Right Side */
 #content-container {
-    color: #111111;
+    color: var(--text-main);
     flex-basis: 60%;
     /* Spacing Content */
     display: flex;
@@ -110,11 +114,38 @@ form div {
     flex-direction: column;
 }
 
+label {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 0.1em;
+}
+
+input {
+    width: 15vw;
+    padding: 6px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    color: var(--text-main);
+}
+
+input:focus {
+    border-color: var(--text-main);
+}
+
 /* Button */
 button {
     width: 15em;
-    padding: 0.8em 2.5em;
+    padding: 0.8em 1em;
     margin: 0em 1.5em;
+
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+
+    font-weight: 500;
+    font-size: 1rem;
+    text-shadow: 1px 1px 5px var(--text-main);
 }
 
 #login {
@@ -127,4 +158,5 @@ a:visited {
     color: #111;
     text-decoration: none;
     font-size: 1em;
+    margin-bottom: 1em; /* Slightly move upwards */
 }
